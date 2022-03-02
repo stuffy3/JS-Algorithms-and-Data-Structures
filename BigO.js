@@ -173,3 +173,7 @@ maxSubarraySum([2,3,4,5,3,6,5,7], 4)
 //Linear Search O(n)
 //Binary Search Log(n) divides up the elements in the middle, gathers the middle and decides which direction to go to.
 
+
+
+//RECURSION
+//a function that calls itself
