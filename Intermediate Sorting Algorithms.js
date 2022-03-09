@@ -55,6 +55,24 @@ mergeSort([1,4,67,7,52,6,9,3,44,56,73,36,45,25,74,87,99,65,34,12,123,42,143,511,
 //QUICK SORT
 //uses the fact that arrays of 0 or 1s are always sorted
 //works by selecting one element called the pivot and finding he index where the pivot should end up in the sorted array
+//Pivot Helper
+
+//in order to implement gerge sort, it's useful to first implement a function responsible arranging elements in an array on either side of the pivot
+//given an array this helper function shuld designate an element as the pivot
+//it should then rearrange elements in the array so that all the values less than the pivot are moved to the right of the pivot, and all the values greater than the pivot are moved to the right
+
+//picking the pivot
+//the runtime of quick sort depends in part on how one selects the pivot
+//ideally the pivot should be chosen so that its roughly the median value in the data set you're sorting 
+//for simplicity we'll always choose the pivot to be the first element
 
 
+//PIVOT PSEUDOCODE
+//it will help to accept three arguments: an array, a start index,
+//and an end index(these can default to 0 and the array length minus 1)
+//grab the pivot from the start of the array
+//store the current pivot index in a variable until the end
+//  if the pivot is grater than the current element, increment the pivot index variuable and then swap the current element with the element at the pivot index
+//swap the startig element (ie the pivot) with the pivot index
+//return the pivot index
 
